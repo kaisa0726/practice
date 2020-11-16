@@ -1,0 +1,5 @@
+<form action="{% url 'blog:search_post' %}" method="GET">
+
+    <input type="search" name="q" value="{{ request.GET.q }}" placeholder="Search" aria-label="Search">
+    <button type="submit">検索</button>
+</form>
